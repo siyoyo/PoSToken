@@ -79,7 +79,7 @@ contract Ownable {
 contract ERC20Basic {
     uint256 public totalSupply;
     function balanceOf(address who) constant returns (uint256);
-    function transfer(address to, uint256 value) returns (bool);
+    function transfer(address to, uint256 value) returns (bool); 
     event Transfer(address indexed from, address indexed to, uint256 value);
 }
 
@@ -90,17 +90,17 @@ contract ERC20Basic {
  */
 contract ERC20 is ERC20Basic {
     function allowance(address owner, address spender) constant returns (uint256);
-    function transferFrom(address from, address to, uint256 value) returns (bool);
+    function transferFrom(address from, address to, uint256 value) returns (bool); 
     function approve(address spender, uint256 value) returns (bool);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 
 /**
- * @title PoSTokenStandard
- * @dev the interface of PoSTokenStandard
+ * @title EagleCoinStandard
+ * @dev the interface of EagleCoinStandard
  */
-contract PoSTokenStandard {
+contract EagleCoinStandard {
     uint256 public stakeStartTime;
     uint256 public stakeMinAge;
     uint256 public stakeMaxAge;
@@ -111,7 +111,7 @@ contract PoSTokenStandard {
 }
 
 
-contract PoSToken is ERC20,PoSTokenStandard,Ownable {
+contract EagleCoin is ERC20,EagleCoinStandard,Ownable {
     using SafeMath for uint256;
 
     string public name = "EagleCoin";
@@ -153,7 +153,7 @@ contract PoSToken is ERC20,PoSTokenStandard,Ownable {
         _;
     }
 
-    function PoSToken() {
+    function EagleCoin() {
         maxTotalSupply = 12**25; // 12 Mil.
         totalInitialSupply = 36**24; // 3.6 Mil.
 

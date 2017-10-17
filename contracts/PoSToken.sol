@@ -114,8 +114,8 @@ contract PoSTokenStandard {
 contract PoSToken is ERC20,PoSTokenStandard,Ownable {
     using SafeMath for uint256;
 
-    string public name = "PoSToken";
-    string public symbol = "POS";
+    string public name = "EagleCoin";
+    string public symbol = "EAGLE";
     uint public decimals = 18;
 
     uint public chainStartTime; //chain start time
@@ -154,8 +154,8 @@ contract PoSToken is ERC20,PoSTokenStandard,Ownable {
     }
 
     function PoSToken() {
-        maxTotalSupply = 10**25; // 10 Mil.
-        totalInitialSupply = 10**24; // 1 Mil.
+        maxTotalSupply = 12**25; // 12 Mil.
+        totalInitialSupply = 36**24; // 3.6 Mil.
 
         chainStartTime = now;
         chainStartBlockNumber = block.number;

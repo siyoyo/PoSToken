@@ -154,8 +154,8 @@ contract EagleCoin is ERC20,EagleCoinStandard,Ownable {
     }
 
     function EagleCoin() {
-        maxTotalSupply = 12**25; // 12 Mil.
-        totalInitialSupply = 36**24; // 3.6 Mil.
+        maxTotalSupply = 12000000000000000000000000; // 12 Mil.
+        totalInitialSupply = 3600000000000000000000000; // 3.6 Mil.
 
         chainStartTime = now;
         chainStartBlockNumber = block.number;

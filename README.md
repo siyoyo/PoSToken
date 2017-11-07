@@ -4,7 +4,7 @@ The World's First Proof-of-Stake Smart Contract Token on Ethereum
 ## Specifications of EagleCoin
 * **Name**: EagleCoin
 * **Symbol**: EAGLE
-* **Decimals**: EAGLE
+* **Decimals**: 18
 * **Standard**: ERC20 & PoSTokenStandard
 * **Platform**: Ethereum
 * **Maximum Total Supply**: 12,000,000 POS
